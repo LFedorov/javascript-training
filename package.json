@@ -1,0 +1,13 @@
+{
+  "name": "javascript-training",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Leonid Fedorov",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest src/"
+  },
+  "devDependencies": {
+    "jest": "^23.2.0"
+  }
+}
