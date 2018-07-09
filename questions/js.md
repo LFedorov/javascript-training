@@ -132,7 +132,7 @@ isPalindrome('A man a plan a canal Panama') // true
 isPalindrome('А роза упала на лапу Азора.') // true
 isPalindrome('Аргентина манит негра') // true
 isPalindrome('Казак') // true
-isPalindrome('Лев с ума ламу свёл') // true
+isPalindrome('Лев с ума ламу свел') // true
 isPalindrome('Замучен он, но не чумаз!') // true
 ```
 
