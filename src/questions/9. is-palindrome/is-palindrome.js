@@ -9,7 +9,7 @@ function isPalindrome(str) {
     return true;
   }
 
-  const chars = str.toLowerCase().replace(/[^a-zа-я]+/g, '');
+  const chars = str.toLowerCase().replace(/[^a-zа-я]/g, '');
 
   if (chars.length === 0) {   
     return false;
