@@ -70,6 +70,60 @@ isBig([2]) // false
 isBig([3]) // true
 ```
 
+### 6. Как сделать, чтобы при клике на любой div внутри root в консоль выводился его id?
+```html
+<div id="root" style="background: red;">
+  root
+  <span id="id1" style="background: lightblue;">id1</span>
+  <div id="id2" style="background: green;">
+    id2
+    <div id="id3" style="background: yellow;">id3</div>
+  </div>
+</div>
+```
+
+### 7. Как сделать из массива объект?
+```js
+var arr = [
+ { name: 'width', value: 10 }, 
+ { name: 'height', value: 20 }
+]
+
+// { width: 10, height: 20 }
+```
+
+### 8. Есть функция и объект. Как вывести в консоли значение x из объекта используя функцию?
+```js
+function f() { console.log(this.x); }
+var obj = { x: 'bar' };
+```
+
+### 9. Что вернет метод?
+```js
+function Book() {
+  this.name = 'foo';
+}
+
+Book.prototype = {
+  getName: function() {
+    return this.name;
+  }
+};
+
+let book = new Book();
+
+Book.prototype.getUpperName = function() {
+  return this.getName().toUpperCase();
+}
+
+book.getUpperName();
+```
+
+### 10. Что вернет этот код?
+```js
+typeof (function(){})();
+```
+
 ## Практика
 ### 1. Реализуйте функцию isPrime(), которая возвращает true или false, указывая, является ли переданное ей число простым. Простое число — это натуральное число, большее единицы, имеющее ровно два натуральных делителя: 1 и само себя.
 ```js
