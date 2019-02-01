@@ -339,3 +339,10 @@ tree.inorder(fn) // undefined
 tree.preorder(fn) // undefined
 tree.postorder(fn) // undefined
 ```
+
+### 27. Реализуйте функцию поиска повторяющихся элементов в массиве.
+```js
+repeated([1, 2, 2, 3]) // [2]
+repeated([1, 2, 2, 3, 4, 4]) // [2, 4]
+repeated([1, 2, 3]) // []
+```
