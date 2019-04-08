@@ -1,16 +1,18 @@
-/*
-  Реализуйте функцию reverse(), которая обращает порядок следования символов переданной ей строки. 
-  Не пользуйтесь встроенной функцией reverse().
-*/
+// Реализуйте функцию reverse(), которая обращает порядок следования символов переданной ей строки.
+// Не пользуйтесь встроенной функцией reverse().
 
 function reverse(str) {
-  let result = '';
+  const max = str.length - 1;
+  const mid = Math.floor(max / 2);
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    result += str[i];
+  let result = [];
+
+  for (let i = 0; i <= mid; i++) {
+    result[i] = str[max - i];
+    result[max - i] = str[i];
   }
 
-  return result;
+  return result.join('');
 }
 
 module.exports = {
