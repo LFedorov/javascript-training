@@ -1,21 +1,15 @@
-/*
-  Создайте собственную реализацию функции filter()
-*/
+// Создайте собственную реализацию функции filter()
 
-function filter(arr, fn) {
-  const result = [];
-
-  for (let i = 0; i < arr.length; i++) {
-    const current = arr[i];
-
-    if (fn(current)) {
-      result.push(arr[i]);
+function filter(arr, predicate) {
+  return arr.reduce((result, item) => {
+    if (predicate(item)) {
+      result.push(item);
     }
-  }
 
-  return result;
+    return result;
+  }, []);
 }
 
 module.exports = {
   filter,
-}
+};
