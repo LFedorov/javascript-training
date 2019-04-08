@@ -9,7 +9,7 @@
     "pretty": "prettier --config prettier.json --write \"src/**/*.js\""
   },
   "devDependencies": {
-    "jest": "^23.2.0",
+    "jest": "^24.7.1",
     "prettier": "^1.16.4"
   }
 }
