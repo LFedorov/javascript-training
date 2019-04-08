@@ -11,4 +11,4 @@ it('should be called once', async () => {
   await new Promise(r => setTimeout(r, 1000));
 
   expect(fn).toHaveBeenCalledTimes(1);
-})
+});

@@ -1,16 +1,16 @@
 function debounce(f, t) {
-  return function (args) {
+  return function(args) {
     let previousCall = this.lastCall;
     this.lastCall = Date.now();
-    if (previousCall && ((this.lastCall - previousCall) <= t)) {
+    if (previousCall && this.lastCall - previousCall <= t) {
       clearTimeout(this.lastCallTimer);
     }
     this.lastCallTimer = setTimeout(() => f(args), t);
-  }
+  };
 }
 
-let logger = (args) => console.log(`My args are ${args}`);
- // debounce: call the logger when two seconds have elapsed since the last call
+let logger = args => console.log(`My args are ${args}`);
+// debounce: call the logger when two seconds have elapsed since the last call
 let debouncedLogger = debounce(logger, 2000);
 
 debouncedLogger([1, 2, 3]);

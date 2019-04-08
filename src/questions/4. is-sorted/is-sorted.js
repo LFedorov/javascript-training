@@ -19,4 +19,4 @@ function isSorted(arr) {
 
 module.exports = {
   isSorted,
-}
+};

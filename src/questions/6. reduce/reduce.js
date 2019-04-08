@@ -14,4 +14,4 @@ function reduce(arr, fn, acc) {
 
 module.exports = {
   reduce,
-}
+};

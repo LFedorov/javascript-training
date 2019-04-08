@@ -10,4 +10,4 @@ it('should return corret values', () => {
   expect(isPalindrome('Казак')).toBeTruthy();
   expect(isPalindrome('Лев с ума ламу свел')).toBeTruthy();
   expect(isPalindrome('Замучен он, но не чумаз!')).toBeTruthy();
-})
+});
