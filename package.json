@@ -5,9 +5,11 @@
   "author": "Leonid Fedorov",
   "license": "MIT",
   "scripts": {
-    "test": "jest src/"
+    "test": "jest src/",
+    "pretty": "prettier --config prettier.json --write \"src/**/*.js\""
   },
   "devDependencies": {
-    "jest": "^23.2.0"
+    "jest": "^23.2.0",
+    "prettier": "^1.16.4"
   }
 }
