@@ -25,4 +25,4 @@ function fib(num) {
 
 module.exports = {
   fib,
-}
+};

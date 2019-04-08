@@ -3,13 +3,13 @@
 */
 
 function factorial(num) {
-  if(num <= 1) {
+  if (num <= 1) {
     return 1;
   }
 
   let res = 1;
 
-  for(let i = 1; i <= num; i++) {  
+  for (let i = 1; i <= num; i++) {
     res = res * i;
   }
 
@@ -18,4 +18,4 @@ function factorial(num) {
 
 module.exports = {
   factorial,
-}
+};

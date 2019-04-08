@@ -11,15 +11,15 @@ function missing(arr) {
   let max = 0;
   let sum = 0;
 
-  for(let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
 
-    if(arr[i] > max) {
+    if (arr[i] > max) {
       max = arr[i];
     }
   }
 
-  const expected = max * (max + 1) / 2;
+  const expected = (max * (max + 1)) / 2;
   const diff = expected - sum;
 
   return diff > 0 ? diff : undefined;
@@ -27,4 +27,4 @@ function missing(arr) {
 
 module.exports = {
   missing,
-}
+};
