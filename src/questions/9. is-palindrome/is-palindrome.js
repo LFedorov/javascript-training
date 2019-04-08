@@ -15,12 +15,11 @@ function isPalindrome(str) {
     return false;
   }
 
-  const mid = Math.floor(chars.length / 2);
+  const max = chars.length - 1;
+  const mid = Math.floor(max / 2);
 
-  for (let i = 0; i < mid; i++) {
-    let j = chars.length - 1 - i;
-
-    if (chars[i] !== chars[j]) {
+  for (let i = 0; i <= mid; i++) {
+    if (chars[i] !== chars[max - i]) {
       return false;
     }
   }
